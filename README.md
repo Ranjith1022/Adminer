@@ -68,13 +68,8 @@ $ vim /etc/apache2/sites-available/000-default.conf # change DocumentRoot path
 </VirtualHost>
 ```
 
-#### Step 8:
-Install <strong>```PHP```</strong> version 5+
-```
-$ sudo apt install --no-install-recommends php8.1
-```
 
-#### Step 9:
+#### Step 8:
 <strong>```Finally```</strong> check the below URL in your web broser
 ```
 $ http://localhost
