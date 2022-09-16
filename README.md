@@ -7,6 +7,13 @@
 Adminer is a tool for managing content in databases. It natively supports MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, Elasticsearch and MongoDB. Adminer is distributed under Apache license in a form of a single PHP file.Graphical User Interface (GUI) Tool for Database Management System.
 Replace phpMyAdmin with Adminer and you will get a tidier user interface, better support for MySQL features, higher performance and more security
 
+   
+  ## Requirements
+  o	PHP version 5+ with enabled sessions
+  
+  o	Apache WebServer
+  
+  
 ## Installation
 Adminer on Ubuntu 20.04 LTS
 
@@ -121,11 +128,6 @@ $ http://localhost
   
 ```
   
-    
-  ## Requirements
-  o	PHP version 5+ with enabled sessions
-  
-  o	Apache or any WebServer
 
 
   ## Software works with:
