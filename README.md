@@ -44,15 +44,15 @@ $ sudo apt install git
 #### Step 5:
 <strong>```Goto```</strong> site path
 ```
-$ mkdir /var/www/Database-Management-Tool
-$ cd /var/www/Database-Management-Tool
+$ mkdir /var/www
+$ cd /var/www
 ```
 
 
 #### Step 6:
 <strong>```Clone```</strong> the Project Documents
 ```
-$ git clone https://github.com/Ranjith1022/Database-Management-Tool.git
+$ git clone https://github.com/Ranjith1022/Adminer.git
 ```
 
 #### Step 7:
@@ -68,7 +68,7 @@ $ vim /etc/apache2/sites-available/000-default.conf # change DocumentRoot path
 <VirtualHost *:80>
   ...
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/Database-Management-Tool
+    DocumentRoot /var/www/Adminer
    ...
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
