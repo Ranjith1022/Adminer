@@ -2,10 +2,84 @@
 <img src= "https://ps.w.org/pexlechris-adminer/assets/banner-1544x500.jpg?rev=2685110" alt='AdminerLogo'>
 <center>
 
-# Database-Management-Tool
+# Adminer (Database-Management-Tool)
 
 Adminer is a tool for managing content in databases. It natively supports MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, Elasticsearch and MongoDB. Adminer is distributed under Apache license in a form of a single PHP file.Graphical User Interface (GUI) Tool for Database Management System.
 Replace phpMyAdmin with Adminer and you will get a tidier user interface, better support for MySQL features, higher performance and more security
+
+## Installation
+Adminer on Ubuntu 20.04 LTS
+
+#### Step 1:
+Update and Upgrade 
+```
+$ sudo apt update && upgrade
+```
+
+#### Step 2:
+Install <strong>```Apache2 WebServer```</strong>
+```
+$ sudo apt install apache2
+```
+
+#### Step 3:
+Install <strong>```PHP```</strong> version 5+
+```
+$ sudo apt install --no-install-recommends php8.1
+```
+
+#### Step 4:
+Install <strong>```git```</strong>
+```
+$ sudo apt install git
+```
+
+#### Step 5:
+<strong>```Goto```</strong> site path
+```
+$ mkdir /var/www/Database-Management-Tool
+$ cd /var/www/Database-Management-Tool
+```
+
+
+#### Step 6:
+<strong>```Clone```</strong> the Project Documents
+```
+$ git clone https://github.com/Ranjith1022/Database-Management-Tool.git
+```
+
+#### Step 7:
+Default <strong>```Apache2 configuration```</strong> for Adminer <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-20-04">Click here</a> for Manual configuration.
+
+```diff
++ change DocumentRoot path
+```
+```
+$ vim /etc/apache2/sites-available/000-default.conf # change DocumentRoot path
+```
+```diff
+<VirtualHost *:80>
+  ...
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/Database-Management-Tool
+   ...
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+#### Step 8:
+Install <strong>```PHP```</strong> version 5+
+```
+$ sudo apt install --no-install-recommends php8.1
+```
+
+#### Step 9:
+<strong>```Finally```</strong> check the below URL in your web broser
+```
+$ http://localhost
+```
+
 
 ## Adminer development priorities are:
 1. Security
