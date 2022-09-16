@@ -50,8 +50,15 @@ Replace phpMyAdmin with Adminer and you will get a tidier user interface, better
   
   + Free for commercial and non-commercial use (Apache License or GPL 2)
   
-  ```
+```
   
+    
+  ## Requirements
+  o	PHP version 5+ with enabled sessions
+  
+  o	Apache or any WebServer
+
+
   ## Software works with:
   MySQL
   
@@ -76,9 +83,3 @@ Replace phpMyAdmin with Adminer and you will get a tidier user interface, better
   ClickHouse (plugin)
   
   Improve your driver
-  
-  
-  ## Requirements
-  o	PHP version 5+ with enabled sessions
-  
-  o	Apache or any WebServer
